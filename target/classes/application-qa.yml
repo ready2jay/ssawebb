@@ -1,0 +1,19 @@
+#give port no
+server:
+  port: 9999
+  #give a id to project
+  ssa:
+   ssaprops:
+     ssasuccess: project executed successfully 
+     ssafailure: project execution failed
+  #jdbc properties
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    url: jdbc:oracle:thin:@loacalhost:1521:xe
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    username: system
+    password: manager

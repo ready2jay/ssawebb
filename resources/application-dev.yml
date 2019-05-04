@@ -1,0 +1,20 @@
+#give port no
+server:
+  port: 9090
+  #give a id to project
+  ssa:
+   ssaprops:
+     ssaSuccess: Form submitted successfully 
+     ssaFailure: Form submission failed
+  #jdbc properties
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    username: proj_dev
+    password: proj_dev
+    
